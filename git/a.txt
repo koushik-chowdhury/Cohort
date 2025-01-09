@@ -1,5 +1,0 @@
-hello my name is koushik chowdhury
-
-i have done bca from gour mahavidyalaya
-
-another commit
