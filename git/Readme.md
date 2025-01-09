@@ -108,7 +108,6 @@ git checkout development
 ```bash 
 git merge feature/tea-menu
 ```
-
 ----------
 
 ### Pull Requests 
