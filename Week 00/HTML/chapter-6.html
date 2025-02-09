@@ -1,0 +1,144 @@
+<!-- 
+1. Create a table with three columns: "city", "country" and "population". Add three rows of data.
+2. Create a table with a caption that lists your favorite foods and their respective catogories.
+3. Use colspan and rowspan to create complex table layour for weekly schedule 
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter - 6</title>
+    <style>
+        td,th{
+            border: 1px solid black;
+        }
+        table {
+      width: 50%;
+      margin: 20px auto;
+      border-collapse: collapse;
+      text-align: left;
+    }
+    caption {
+      font-size: 1.5em;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+    th, td {
+      padding: 10px;
+      border: 1px solid #ddd;
+    }
+    th {
+      background-color: #f4f4f4;
+    }
+    </style>
+</head>
+<body>
+    <table>
+        <tr>
+            <th>City</th>
+            <th>Country</th>
+            <th>Population</th>
+        </tr>
+        <tr>
+            <td>Malda</td>
+            <td>India</td>
+            <td>100k</td>
+        </tr>
+        <tr>
+            <td>Kolkata</td>
+            <td>India</td>
+            <td>1M</td>
+        </tr>
+        <tr>
+            <td>Mumbai</td>
+            <td>India</td>
+            <td>2M</td>
+        </tr>
+        <tr>
+            <td>Tokyo</td>
+            <td>Japan</td>
+            <td>5M</td>
+        </tr>
+    </table>
+    <table>
+        <caption>My Favorite Foods</caption>
+        <thead>
+          <tr>
+            <th>Food</th>
+            <th>Category</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Pizza</td>
+            <td>Fast Food</td>
+          </tr>
+          <tr>
+            <td>Biriyani</td>
+            <td>Rice Dish</td>
+          </tr>
+          <tr>
+            <td>Chocolate Cake</td>
+            <td>Dessert</td>
+          </tr>
+          <tr>
+            <td>Mango</td>
+            <td>Fruit</td>
+          </tr>
+          <tr>
+            <td>Spaghetti</td>
+            <td>Pasta</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <table>
+        <caption>Weekly Schedule</caption>
+        <thead>
+          <tr>
+            <th>Time</th>
+            <th>Monday</th>
+            <th>Tuesday</th>
+            <th>Wednesday</th>
+            <th>Thursday</th>
+            <th>Friday</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td rowspan="2">9:00 - 10:00</td>
+            <td colspan="2">Math</td>
+            <td rowspan="3">Science</td>
+            <td>History</td>
+            <td>Geography</td>
+          </tr>
+          <tr>
+            <td>English</td>
+            <td>Computer Science</td>
+            <td rowspan="2">Physics</td>
+            <td>Art</td>
+          </tr>
+          <tr>
+            <td>10:00 - 11:00</td>
+            <td>Biology</td>
+            <td colspan="2">PE (Physical Education)</td>
+            <td>Music</td>
+          </tr>
+          <tr>
+            <td rowspan="2">11-12</td>
+            <td colspan="3">Group Project</td>
+            <td colspan="2">Sports Practice</td>
+          </tr>
+          <tr>
+            <td>Free Time</td>
+            <td rowspan="2">Debate Club</td>
+            <td>Drama</td>
+            <td>Library</td>
+            <td>Coding</td>
+          </tr>
+        </tbody>
+      </table>
+</body>
+</html>
