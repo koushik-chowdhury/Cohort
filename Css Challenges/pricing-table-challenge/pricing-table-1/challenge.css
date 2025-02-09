@@ -1,0 +1,122 @@
+/* Challenge CSS */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #f5f5f5;
+}
+
+.container {
+  /* Add your styles here */
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+h1 {
+  /* Add your styles here */
+}
+
+.pricing-heading {
+  /* Add your styles here */
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+}
+
+.pricing-container {
+  /* Add your styles here */
+  display: flex;
+  gap: 1.5rem;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-shrink: 0;
+}
+
+.pricing-card {
+  /* Add your styles here */
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 25px;
+  /* border: 1px solid red; */
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px;
+  border-radius: 8px;
+  width: 320px;
+  justify-content: center;
+  align-items: center;
+}
+
+.pricing-card:hover {
+  /* Add your styles here */
+}
+
+.pricing-card.popular {
+  /* Add your styles here */
+  border: 2px solid orange;
+  position: relative;
+}
+
+.popular-badge {
+  /* Add your styles here */
+background-color: rgb(255, 136, 0);
+color: white;
+padding: 6px;
+font-size: 0.9rem;
+border-radius: 24px;
+position: absolute;
+top: -17px;
+}
+
+.price {
+  /* Add your styles here */
+  font-size: 2rem;
+  font-weight: 700;
+  color: #2a2a2a;
+}
+
+.period {
+  /* Add your styles here */
+  color: #666666;
+
+}
+
+.features {
+  /* Add your styles here */
+  display: flex;
+  flex-direction: column;
+  /* border: 1px solid red; */
+  text-align: center;
+  gap: 1.2rem;
+
+}
+.features li{
+  color: #666666;
+  list-style-type: "🍵";
+}
+
+.subscribe-btn {
+  /* Add your styles here */
+  border: none;
+  background-color: orange;
+  padding-inline: 15px;
+  padding-block: 12px;
+  font-size: 1rem;
+  border-radius: 24px;
+  cursor: pointer;
+}
+
+.subscribe-btn:hover {
+  /* Add your styles here */
+  background-color: rgb(232, 153, 5);
+
+}
