@@ -5,8 +5,18 @@
   margin: 0;
   box-sizing: border-box;
 }
+button{
+  cursor: pointer;
+}
+img{
+  transition: 0.3s ease all;
+}
+img:hover{
+  transform: scale(1.1);
+}
 body {
   background-color: #fffffa;
+  overflow-x: hidden;
 }
 /* NAVBAR */
 nav {
@@ -218,9 +228,8 @@ button {
   padding-inline: 15px;
   background-color: #cfc2ff;
   border-radius: 16px;
- 
 }
-.publish-content{
+.publish-content,.analyze-content {
   display: flex;
   flex-direction: column;
   /* border: 1px solid red; */
@@ -246,8 +255,9 @@ h3 {
 }
 .features p {
   font-family: Figtree, ui-sans-serif, system-ui, sans-serif;
+  /* padding: 0.5rem; */
 }
-.content h3{
+.content h3 {
   font-size: 34px;
   line-height: 35px;
   word-spacing: 8px;
@@ -258,15 +268,133 @@ h3 {
   font-size: 15.5px;
   justify-self: start;
 }
-.btn button{
+.btn button {
   background: none;
   border: 1px solid black;
-  width: 150px;
-  padding-block: 14px;
+  width: 160px;
+  padding-block: 12px;
   background-color: #213130;
   color: #e0e0e0;
   font-size: 18px;
 }
-.content-text{
+.content-text {
   font-size: 18px;
+}
+.features {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem;
+}
+.features span {
+  margin-right: 0.5rem;
+}
+.features span i {
+  font-size: 1.3rem;
+}
+
+/* perfect section */
+.perfect-container {
+  margin-top: 1.5rem;
+  margin-inline: 45px;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  padding-block: 55px;
+  padding-inline: 15px;
+  background-color: #ffc4bd;
+  border-radius: 16px;
+}
+/* end perfect section */
+
+/* Colab & Engage */
+.colab-engage {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1.5rem;
+  justify-content: center;
+  width: 100%;
+}
+
+.colab,
+.engage {
+  display: flex;
+  flex-direction: column;
+  background-color: #ffe2a8;
+  border-radius: 16px;
+  gap: 6rem;
+  justify-content: center;
+  align-items: center;
+  /* margin-left: 10rem; */
+  padding-top: 80px;
+}
+.engage{
+  background: #b0ec9c;
+}
+.colab button,
+.engage button {
+  background: none;
+  border: 1px solid black;
+  width: 160px;
+  padding-block: 12px;
+  background-color: #213130;
+  color: #e0e0e0;
+  font-size: 16px;
+}
+.colab .content h3,
+.engage .content h3 {
+  font-size: 38px;
+  line-height: 35.5px;
+  font-weight: 400;
+  width: 540px;
+}
+.colab .content p,
+.engage .content p {
+  font-size: 18px;
+  line-height: 26px;
+}
+
+
+.colab img,.engage img {
+  width: 705px;
+  aspect-ratio: auto 712 / 345;
+  height: 345px;
+}
+
+.colab .content p,h3,.engage .content p,h3{
+  width: 555px;
+  /* border: 1px solid red; */
+  font-family: Roboto;
+  color: #3a3a3a;
+}
+.colab .content, .engage .content{
+  display: flex;
+gap: 2rem;
+}
+
+/* Colab & Engage end */
+
+
+
+/* ANALYZE SECTION */
+.analyze-background{
+  background-color: #c2e2ff;
+  height: auto;
+  padding-inline: 40px;
+  padding-block: 80px;
+}
+.analyze-background img{
+  width: 670px;
+  aspect-ratio: auto 670 / 440;
+  height: 440px;
+}
+/* END */
+
+/* SOCIAL CONTAINER */
+.social-container{
+  display: flex;
+  /* flex-direction: column; */
+}
+.social-icon{
+  display: flex;
 }
