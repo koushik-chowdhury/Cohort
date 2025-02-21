@@ -10,7 +10,7 @@ body {
 .container {
   display: flex;
   flex-wrap: wrap;
-  flex-shrink: 0;
+  /* flex-shrink: 0; */
   padding: 20px;
   /* justify-content: stretch; */
   gap: 3rem;
@@ -153,4 +153,23 @@ textarea:focus {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-style: italic;
     font-size: 0.9rem;
+}
+
+
+/* RESPONSIVE */
+
+@media only screen and (max-width: 600px) {
+  .container{
+    flex-direction: column;
+    width: 100%;
+  }
+  .give-review,.get-review{
+    width: 100%;
+  }
+  .information{
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-evenly;
+  font-weight: bold;
+  }
 }
