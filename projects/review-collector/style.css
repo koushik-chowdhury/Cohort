@@ -1,0 +1,156 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+body {
+  background-color: #3a3a3a;
+}
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  flex-shrink: 0;
+  padding: 20px;
+  /* justify-content: stretch; */
+  gap: 3rem;
+  /* align-items: center; */
+  margin-top: 5rem;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 5rem;
+}
+
+/*  REVIEWER PART */
+
+.give-review,
+.input-field,
+.org-recom,
+.submission {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.give-review h2 {
+  text-align: center;
+}
+.give-review {
+  background-color: #2a2a2a;
+  padding-block: 60px;
+  padding-inline: 30px;
+  width: 35%;
+  color: #fff;
+  border-radius: 16px;
+  /* min-height: 65vh; */
+  /* max-height: 65vh; */
+  /* overflow: auto; */
+  /* flex-grow: 1; */
+}
+input,
+textarea {
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  background-color: #4a4a4a;
+  color: #fff;
+  font-size: 1rem;
+}
+input,
+textarea:focus {
+  border: none;
+  outline: none;
+}
+::placeholder {
+  color: #fff;
+}
+.submission {
+  align-items: center;
+}
+.submission button {
+  border: none;
+  background: none;
+  padding: 10px;
+  background-color: #008600;
+  color: #fff;
+  cursor: pointer;
+  width: 200px;
+  font-size: 1rem;
+  border-radius: 8px;
+  transition: 0.2s ease;
+}
+
+.submission button:hover {
+  background-color: #02a802;
+}
+
+/* GET REVIEW */
+
+.get-review {
+  /* border: 1px solid white; */
+  background-color: #2a2a2a;
+  padding-block: 40px;
+  padding-inline: 40px;
+  width: 50%;
+  height: auto;
+  color: #fff;
+  border-radius: 16px;
+  height: auto;
+  /* max-height: 65vh; */
+  /* overflow: auto; */
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  box-shadow: rgba(0, 0, 0, 0.5) 1px 1px 00px, rgba(0, 0, 0, 0.5) 0px 6px 6px;
+
+}
+
+.direction{
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 1rem;
+}.reviews{
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 1rem;
+}
+.indi-review {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid white;
+  background-color: #1a1a1a;
+  box-shadow: rgba(0, 0, 0, 0.5) 1px 1px 00px, rgba(0, 0, 0, 0.5) 0px 6px 6px;
+
+  border-radius: 8px;
+  padding: 10px;
+  gap: 1rem;
+}
+.information {
+  /* border: 1px solid white; */
+  display: flex;
+  padding: 5px;
+  font-size: 0.8rem;
+  justify-content: space-between;
+  background-color: #145a32;
+  border-radius: 8px;
+}
+
+.ids {
+  /* background-color: #145a32; */
+  /* padding: 5px; */
+  /* box-shadow: rgba(0, 0, 0, 0.5) 1px 1px 00px, rgba(0, 0, 0, 0.5) 0px 6px 6px; */
+  padding: 5px;
+  border-radius: 16px;
+}
+.content{
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+    padding: 10px;
+    color: #a6a6a6;
+}
+.display-review{
+    line-height: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-style: italic;
+    font-size: 0.9rem;
+}

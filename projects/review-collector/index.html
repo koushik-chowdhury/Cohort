@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Review Collector</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="give-review">
+            <h2>Give Review</h2>
+            <div class="input-field">
+                <input type="text" name="" id="name" placeholder="Enter your name.">
+                <textarea name="" id="review" rows="5" placeholder="Write your msg here.."></textarea>
+            </div>
+            <div class="org-recom">
+                <input type="text" name="" id="organisation-name" placeholder="Enter organisation name.">
+                <div class="radio-button">
+                    <label for="Recommedation">Recommedation:</label>
+                    <input type="radio" name="recom" id="radio" value="Yes"> Yes
+                    <input type="radio" name="recom" id="" value="No"> No
+                </div>
+            </div>
+            <div class="submission">
+                <button id="submit">Submit</button>
+            </div>
+        </div>
+        <div class="get-review">
+            <h2 id="review-count">Total Review : </h2>
+            <div class="direction">
+                <div class="reviews">
+                    <!--  -->
+                    <h2 class="status">No Reviews Yet</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
