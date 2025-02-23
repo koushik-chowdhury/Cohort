@@ -12,4 +12,5 @@ toggleButton.addEventListener('click',()=>{
     darkMode.classList.toggle('dark-mode')
     toggleButton.innerText = toggleButton.innerText === 'Turn On'?'Turn Off':'Turn On'
     lightStatus.innerText = lightStatus.innerText === 'Status: On'?'Status: Off':'Status: On'
+    document.title = lightStatus.innerText
 })
