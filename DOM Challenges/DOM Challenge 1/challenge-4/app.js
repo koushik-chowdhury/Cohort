@@ -6,6 +6,7 @@ let addButton = document.getElementById("addButton");
 let taskList = document.getElementById("taskList");
 let totalTask = document.getElementById("totalTasks");
 let completedTasks = document.getElementById("completedTasks");
+let emptyList = document.querySelector(".empty-list");
 
 let completed = 0;
 let counter = 0;
@@ -43,15 +44,19 @@ function addTask() {
   li.appendChild(span);
   li.appendChild(deleteButton);
   taskList.appendChild(li);
+  emptyList.classList.add("hidden");
   taskInput.value = "";
 
   //deleting task
   deleteButton.addEventListener("click", function () {
     li.remove(); // Remove the task when delete button is clicked
     counter--;
+    if (!counter) {
+      emptyList.classList.remove("hidden");
+    }
     completedTasks.innerHTML = `Completed: ${--completed}`;
     totalTask.innerHTML = `Total tasks: ${counter}`;
-    console.log(totalTask.length)
+    console.log(totalTask.length);
   });
 
   inputBox.addEventListener("change", () => {
@@ -64,3 +69,9 @@ function addTask() {
     }
   });
 }
+
+taskInput.addEventListener("keydown", (e) => {
+  if (e.key === "Enter") {
+    addTask();
+  }
+});
