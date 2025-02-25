@@ -24,12 +24,14 @@ Welcome to my repository! This repo contains all my **CSS challenges**, **UI Clo
 │-- 📁 Week-xx           # Weekly content (replace xx with week number)
 │-- 📄 README.md         # Project details and instructions
 ```
+> [!TIP]
+> Press **`Ctrl + F`** on your keyboard, then open any link—it will open in a new tab.
 
 ## 🎨 CSS Challenges
-(`click to visit - Live`)
+(`click to visit - Live`) 
 
-- [x] [**Pricing Table 1 - Chai Patti Pricing table ☕**](https://koushik-chowdhury.github.io/Cohort/DOM%20Challenges/DOM%20Challenge%201/challenge-1/)
-- [x] [**Pricing Table 2 - Chai Aur Fitness ☕💪🏼**](https://koushik-chowdhury.github.io/Cohort/DOM%20Challenges/DOM%20Challenge%201/challenge-2/)
+- [x] [**Pricing Table 1 - Chai Patti Pricing table ☕**](https://koushik-chowdhury.github.io/Cohort/Css%20Challenges/pricing-table-challenge/pricing-table-1/)
+- [x] [**Pricing Table 2 - Chai Aur Fitness ☕💪🏼**](https://koushik-chowdhury.github.io/Cohort/Css%20Challenges/pricing-table-challenge/pricing-table-2/)
 
 ## 🎯 DOM Challenges
 
@@ -43,7 +45,7 @@ Welcome to my repository! This repo contains all my **CSS challenges**, **UI Clo
 
 - [x] [**Challenge 4 - Task Management 🧏🏻‍♂️**](https://koushik-chowdhury.github.io/Cohort/DOM%20Challenges/DOM%20Challenge%201/challenge-4/)
 
-- [] [**Challenge 5 - Image Carousel Application 🖼️**](https://koushik-chowdhury.github.io/Cohort/DOM%20Challenges/DOM%20Challenge%201/challenge-5/)
+- [ ] [**Challenge 5 - Image Carousel Application 🖼️**](https://koushik-chowdhury.github.io/Cohort/DOM%20Challenges/DOM%20Challenge%201/challenge-5/)
 
 ## 📝 Assignments
 
