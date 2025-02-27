@@ -60,3 +60,30 @@ let updatedRecipe = {
 console.log(updatedRecipe)
 
 let {name,ingredients} = chaiRecipe
+
+
+function calculateAmount(amount){
+    if(amount > 1000){
+        return Number(amount*0.9)
+    }
+    else{
+        return Number(amount)
+    }
+}
+console.log(calculateAmount('900'))
+
+function checkTruth(value){
+    if(value){
+        return `Truthy`
+    }else{
+        return `falsy`
+    }
+}
+console.log(checkTruth())
+console.log(checkTruth(''))
+console.log(checkTruth([]))
+console.log(checkTruth('koushik'))
+console.log(checkTruth(0))
+console.log(checkTruth(1))
+console.log(checkTruth('0'))
+
