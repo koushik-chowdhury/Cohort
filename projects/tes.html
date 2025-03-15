@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Extract Student Data from Word File</title>
+</head>
+<body>
+    <h2>Upload a Word File (.docx)</h2>
+    <input type="file" id="uploadFile" accept=".docx">
+    <pre id="output"></pre>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
+    <script>
+        document.getElementById("uploadFile").addEventListener("change", function(event) {
+            const file = event.target.files[0];
+            if (!file) return;
+
+            const reader = new FileReader();
+            reader.onload = async function(event) {
+                try {
+                    const zip = await JSZip.loadAsync(reader.result);
+                    const xmlText = await zip.file("word/document.xml").async("text");
+
+                    const students = extractStudentDetails(xmlText);
+                    displayStudents(students);
+                } catch (err) {
+                    console.error("Error processing file:", err);
+                }
+            };
+            reader.readAsArrayBuffer(file);
+        });
+
+        function extractStudentDetails(xmlText) {
+            const parser = new DOMParser();
+            const xmlDoc = parser.parseFromString(xmlText, "application/xml");
+            const textNodes = xmlDoc.getElementsByTagName("w:t");
+
+            let fullText = "";
+            for (let node of textNodes) {
+                fullText += node.textContent + " "; // Reconstruct the full text
+            }
+
+            console.log("Extracted text:", fullText); // Debugging output
+
+            const students = [];
+            const regex = /Name:\s*([\w\s]+),\s*Roll:\s*(\d+)/g;
+            let match;
+            
+            while ((match = regex.exec(fullText)) !== null) {
+                students.push({ name: match[1].trim(), roll: match[2].trim() });
+            }
+
+            return students;
+        }
+
+        function displayStudents(students) {
+            const output = document.getElementById("output");
+            if (students.length === 0) {
+                output.innerText = "No student data found.";
+            } else {
+                output.innerText = JSON.stringify(students, null, 2);
+            }
+        }
+    </script>
+</body>
+</html>

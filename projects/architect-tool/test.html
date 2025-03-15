@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testimonial Hero Section</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: #121212;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.hero {
+    text-align: center;
+    padding: 2rem;
+}
+
+.container {
+    max-width: 600px;
+    margin: auto;
+}
+
+h1 {
+    font-size: 2.5rem;
+    font-weight: 600;
+    line-height: 1.3;
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+}
+
+h1 span {
+    color: #00d4ff;
+    position: relative;
+}
+
+h1::after {
+    content: "|";
+    color: #00d4ff;
+    font-weight: bold;
+    font-size: 2.5rem;
+    animation: typing 3s steps(22) infinite, blink 0.7s infinite;
+}
+
+p {
+    font-size: 1rem;
+    margin-top: 10px;
+    opacity: 0.8;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 24px;
+    background: linear-gradient(45deg, #00d4ff, #ff00d4);
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    border-radius: 25px;
+    transition: 0.3s ease;
+}
+
+.btn:hover {
+    transform: scale(1.05);
+    box-shadow: 0 5px 15px rgba(0, 212, 255, 0.5);
+}
+
+/* Text Typing Animation */
+@keyframes typing {
+    0% { width: 0; }
+    100% { width: 100%; }
+}
+
+@keyframes blink {
+    50% { opacity: 0; }
+}
+
+    </style>
+</head>
+<body>
+    <section class="hero">
+        <div class="container">
+            <h1 class="animate-text">
+                Hear What <span>Our Customers</span> Say
+            </h1>
+            <p>Real stories from real people. See how our services have made an impact.</p>
+            <a href="#testimonials" class="btn">Read Testimonials</a>
+        </div>
+    </section>
+</body>
+</html>

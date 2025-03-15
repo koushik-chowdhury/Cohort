@@ -1,0 +1,102 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 20px;
+    line-height: 1.6;
+    background-color: #f8f8f8;
+    color: #333;
+    display: flex; /* Use flexbox for centering */
+    justify-content: center; /* Center horizontally */
+    align-items: flex-start; /* Align to top */
+    min-height: 100vh; /* Ensure full viewport height */
+}
+
+.container {
+    max-width: 900px; /* Limit container width */
+    width: 100%; /* Occupy full width within max-width */
+}
+
+/* ... (Rest of the CSS from previous examples) ... */
+
+/* Add some spacing between event sections */
+.event-section {
+    margin-bottom: 30px;
+}
+
+/* Style the live examples */
+.live-example {
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    background-color: #fff;
+    display: flex;        /* Use flexbox for layout */
+    align-items: center; /* Center vertically */
+    gap: 10px;          /* Add spacing between elements */
+}
+
+.live-example > * { /* Target direct children of live-example */
+    margin: 0; /* Reset default margins */
+}
+
+/* Style the color boxes */
+#colorBox, #colorBox2 {
+    width: 50px;
+    height: 50px;
+    border-radius: 5px;
+    cursor: pointer; /* Indicate interactivity */
+    transition: background-color 0.3s ease; /* Smooth color transitions */
+}
+
+/* Style the text input and output */
+#textInput, #textChangeDiv {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#textChangeDiv {
+    flex-grow: 1; /* Allow the output div to expand */
+    background-color: #f0f0f0;
+}
+
+/* Style the select dropdown */
+#mySelect {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Style the form */
+#myForm {
+    display: flex;
+    gap: 10px;
+}
+
+#myForm input[type="text"] {
+    flex-grow: 1;
+}
+
+/* Improve button styling */
+button {
+    padding: 10px 18px;
+    background-color: #4CAF50; /* Green */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Smooth hover effect */
+}
+
+button:hover {
+    background-color: #45a049; /* Darker green on hover */
+}
+
+/* Style the load and resize messages */
+#loadMessage, #resizeMessage {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f0f0f0;
+    margin-top: 10px;
+}

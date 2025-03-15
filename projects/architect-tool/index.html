@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Architect Tool</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div class="parent">
+      <div class="container">
+        <h2 style="color: #764ba2">Fill all details</h2>
+
+        <div class="input-elements">
+          <label for="building-width">Building Width:</label>
+          <input type="number" id="building-width" />
+        </div>
+
+        <div class="input-elements">
+          <label for="building-length">Building Length:</label>
+          <input type="number" id="building-length" />
+        </div>
+
+        <div class="input-elements">
+          <label for="building-height">Building Height:</label>
+          <input type="number" id="building-height" />
+        </div>
+
+        <div class="input-elements">
+          <label for="building-left-side">LEW Member QTY:</label>
+          <input type="number" id="left-side-member" />
+        </div>
+
+        <div class="input-elements">
+          <label for="building-right-side">REW Member QTY:</label>
+          <input type="number" id="right-side-member" />
+        </div>
+        <div class="input-elements">
+          <label for="building-front">FSW Member QTY:</label>
+          <input type="number" id="front-side-member" />
+        </div>
+        <div class="input-elements">
+          <label for="building-back">BSW Member QTY:</label>
+          <input type="number" id="back-side-member" />
+        </div>
+
+        <div class="input-elements">
+          <label for="insulation-thickness">Insulation Thickness:</label>
+          <input type="number" id="insulation-thickness" />
+        </div>
+
+        <div class="input-elements">
+          <label for="roof-member">Roof Member Qty:</label>
+          <input type="number" id="roof-member" />
+        </div>
+      </div>
+
+      <div class="display-details">
+        <button id="calculate">Details</button>
+        <div class="display">
+          <!-- data will be add here dynamically -->
+        </div>
+      </div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>

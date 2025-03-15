@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Live HTML Editor</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            display: flex;
+            gap: 20px;
+            width: 90%;
+            max-width: 800px;
+        }
+        .editor, .preview {
+            width: 50%;
+            height: 300px;
+            border: 1px solid #ccc;
+            padding: 10px;
+            overflow: auto;
+        }
+        .editor {
+            background: #f8f8f8;
+            outline: none;
+            white-space: pre-wrap;
+        }
+        .preview {
+            border: 2px dashed #000;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Live HTML Editor with Auto-Completion</h2>
+    <div class="container">
+        <!-- Editable Div -->
+        <div class="editor" contenteditable="true"></div>
+
+        <!-- Preview Output -->
+        <div class="preview"></div>
+    </div>
+
+    <script>
+        const editor = document.querySelector('.editor');
+        const preview = document.querySelector('.preview');
+
+        // List of common tags for auto-completion
+        const autoCompleteTags = ["p", "h1", "h2", "h3", "h4", "h5", "h6", "div", "span", "b", "i", "u", "strong", "em"];
+
+        function updatePreview() {
+            preview.innerHTML = editor.innerHTML;
+        }
+
+        editor.addEventListener("input", (event) => {
+            updatePreview();
+        });
+
+        editor.addEventListener("keydown", (event) => {
+            if (event.key === ">") {
+                const selection = window.getSelection();
+                const range = selection.getRangeAt(0);
+                const nodeText = range.startContainer.textContent;
+                const lastWord = nodeText.substring(0, range.startOffset).split("<").pop(); // Get last tag typed
+
+                if (autoCompleteTags.includes(lastWord)) {
+                    event.preventDefault();
+                    const closingTag = `</${lastWord}>`;
+                    document.execCommand("insertText", false, `>${closingTag}`);
+                    range.setStart(range.startContainer, range.startOffset + 1);
+                    selection.removeAllRanges();
+                    selection.addRange(range);
+                }
+            }
+        });
+
+        // Initial   emptyList.classList.add('hidden')
+
+        updatePreview();
+    </script>
+
+</body>
+</html>

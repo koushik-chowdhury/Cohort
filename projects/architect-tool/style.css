@@ -1,0 +1,119 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+}
+.parent {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  justify-content: space-evenly;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+.container {
+  background: #fff;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  width: auto;
+  text-align: center;
+}
+
+label {
+  display: block;
+  font-size: 14px;
+  font-weight: 600;
+  margin-top: 15px;
+  color: #333;
+  text-align: left;
+}
+
+input {
+  width: 50%;
+  padding: 6px;
+  margin-top: 5px;
+  border: 2px solid #ccc;
+  border-radius: 6px;
+  outline: none;
+  transition: 0.3s ease-in-out;
+}
+
+input:focus {
+  border-color: #764ba2;
+  box-shadow: 0 0 5px rgba(118, 75, 162, 0.5);
+}
+
+button {
+  /* margin-top: 20px; */
+  width: 100%;
+  padding: 12px;
+  background: #3ff8c1;
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+.input-elements {
+  display: flex;
+  gap: 1rem;
+  justify-content: space-between;
+}
+button:hover {
+  background: #5a3c7d;
+}
+.display-details {
+  /* border: 1px solid black; */
+  padding: 0;
+}
+.transform {
+  transform: rotate(180deg);
+  writing-mode: sideways-lr;
+  text-align: center;
+  font-size: 2.5rem;
+  /* white-space: nowrap;  */
+}
+@media (max-width: 400px) {
+  .container {
+    width: 90%;
+  }
+}
+
+td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  background-color: #ffffff;
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+tr:hover {
+  background-color: #ddd;
+}
+
+table th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  padding-inline: 6px;
+  text-align: left;
+  background-color: #04aa6d;
+  color: white;
+  text-align: center;
+}
