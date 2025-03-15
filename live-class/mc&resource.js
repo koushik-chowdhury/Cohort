@@ -46,3 +46,4 @@ console.log(arr.myReduce((acc, cur) => acc + cur));
 
 // pollyfill of promise
 
+
