@@ -25,7 +25,7 @@ Welcome to my repository! This repo contains all my **CSS challenges**, **UI Clo
 │-- 📄 README.md         # Project details and instructions
 ```
 > [!TIP]
-> Press **`Ctrl + F`** on your keyboard, then open any link—it will open in a new tab.
+> Press **`Ctrl`** on your keyboard, then open any link—it will open in a new tab.
 
 ## 🎨 CSS Challenges
 (`click to visit - Live`) 
