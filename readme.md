@@ -16,7 +16,7 @@ Welcome to my repository! This repo contains all my **CSS challenges**, **UI Clo
 ## 📂 Folder Structure
 
 ```
-📦 repository-root
+📦 Cohort
 │-- 📁 css-challenges    # CSS challenges
 │-- 📁 DOM-challenges    # DOM challenges
 │-- 📁 UI-Clone          # UI cloning projects
