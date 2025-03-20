@@ -26,3 +26,7 @@
 
 ![Screenshot 1](1.png)
 ![Screenshot 2](2.png)
+
+## Deployed Link 🔗
+
+[Random Quote Generator](https://koushik-chowdhury.github.io/Cohort/Assignemnts/quote-generator/)
