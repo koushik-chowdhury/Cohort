@@ -1,0 +1,32 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    color: #2afa2a;
+    background-color: #1a1a1a;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.date-time{
+    background-color: #3a3a3a;
+    padding: 20px;
+    border-radius: 6px;
+    font-family: sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 350px;
+}
+#time{
+    font-size: 5rem;
+    font-weight: bold;
+}
+#date{
+    color: #b1b1b1;
+    font-size: 1.5rem;
+}
