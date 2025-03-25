@@ -8,10 +8,10 @@ A simple **digital clock** that displays the current **time and date** based on 
 
 ## Features
 
-[x] Displays **live time** in `HH:MM:SS` format  
-[x] Adjusts to the **user’s local timezone**  
-[x] Shows the **date** in `Weekday, Month Day, Year` format  
-[x] Updates **automatically every second**
+- [x] Displays **live time** in `HH:MM:SS` format  
+- [x] Adjusts to the **user’s local timezone**  
+- [x] Shows the **date** in `Weekday, Month Day, Year` -format  
+- [x] Updates **automatically every second**
 
 ---
 
